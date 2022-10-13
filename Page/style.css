@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Garamond;
+	text-align: center;
+}
+.Header-links{
+	width: 90%;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #853ca3;
+	position: fixed;
+}
+.logo{
+	width: 30%;
+	float: left;
+	text-align: left;
+	line-height:100px;
+}
+.logo a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: Papyrus;
+	letter-spacing: 3px;
+	color: #4bd1c1;
+	position: relative;
+	text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+}
+
+nav{
+	float: right;
+	line-height: 100px;
+}
+nav a{
+	text-decoration: none;
+	font-family: Papyrus;
+	letter-spacing: 3px;
+	font-size: 15px;
+	color: #4bd1c1;
+	padding: 0px 15px;
+	font-weight: 1000;
+	position: relative;
+	text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+}
+nav a:hover{
+	background: #4bd1c1;
+	color: white;
+	border-radius: 100px; 
+	text-shadow: none;
+}
+.banner{
+	background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/305140950_452817496696128_6960792682304153367_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=MsggZ6MTa5IAX9a-gFj&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJSNEL_YDHhxD1u30hT4FLQ1OIRp-ExIOTdVHPz28f8Rw&oe=636CB308');
+	background-size: cover;
+	background-position: center;
+	top: 100px;
+	height: 80%;
+	width: 100%;
+	position: fixed;
+}
+.banner:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #3a3069;
+	opacity: .5;
+}
+.content{
+	width: 98.5%;
+	height: auto;
+	position: relative;
+	background-color: #f4d9ff;
+	top: 600px;
+	border: 10px solid #853ca3;
+	font-family: Garamond;
+}
+.content-area h1{
+	font-size: 40px;
+	margin: 0;
+	padding: 30px;
+	letter-spacing: 3px;
+}
+.content-area h1{
+	padding: 2%;
+	line-height: 30px;
+	text-align: justify;
+}
+.header-content{
+	font-family: Papyrus;
+	font-size: 30px;
+}
+.season{
+	font-family: Papyrus;
+	font-size: 30px;
+}
+.img-grid{
+	width: 80%;
+	margin: 100px auto 5px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+.img-grid img{
+	width: 100%;
+	height: 90%;
+	cursor: pointer;
+	border: 5px solid #853ca3;
+	border-radius: 5px;
+	transition: .5s;
+}
+.img-grid img:hover{
+	transform: scale(1.15);
+}
